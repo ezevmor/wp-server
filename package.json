@@ -8,7 +8,11 @@
     "test-app-builddev": "webpack --mode development",
     "test-app-server": "webpack-dev-server --mode development --open"
   },
-  "author": "",
+  "bin": {
+    "build": "bins/build.js",
+    "server": "bins/server.js"
+  },
+  "author": "Elio Zevallos",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.5.5",
