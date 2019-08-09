@@ -1,12 +1,11 @@
+const currentPath = process.cwd(); // where process has been executed
+const userConfig = require(`${currentPath}/wp-server.config`);
 const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: '../app2/src/main.js',
-  output: {
-    path: __dirname + '/../app2/dist',
-    filename: 'app.js'
-  },
+  entry: userConfig.entry,
+  output: userConfig.output,
   module: {
     rules: [
       {
@@ -26,7 +25,7 @@ module.exports = {
   devtool: 'inline-source-map',
   plugins: [
     new CopyPlugin([{
-      from: '../app2/src/index.html'
+      from: userConfig.indexhtml
     }])
   ]
 }
