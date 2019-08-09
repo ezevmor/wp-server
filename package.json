@@ -6,8 +6,7 @@
   "scripts": {
     "test-app-build": "webpack --mode production",
     "test-app-builddev": "webpack --mode development",
-    "test-app-server": "webpack-dev-server --mode development --open",
-    "install": "npm link"
+    "test-app-server": "webpack-dev-server --mode development --open"
   },
   "bin": {
     "build": "bins/build.js",
