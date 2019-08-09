@@ -2,7 +2,6 @@
   "name": "wpserver",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test-app-build": "webpack --mode production",
     "test-app-builddev": "webpack --mode development",
