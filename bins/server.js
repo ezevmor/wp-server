@@ -13,4 +13,4 @@ server.listen(9500, 'localhost', err => {
   }
 
   console.log('wp-server listening at localhost:9500');
-})
+});
